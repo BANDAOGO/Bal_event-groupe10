@@ -1,0 +1,82 @@
+.divg{
+    width: 31em;
+    height: 33em;
+    background-color: rgb(63, 60, 60);
+    margin-left: 28em;
+    padding-left: 60px;
+    margin-top: 5em;
+    border-radius: 10px  10px  10px  10px;
+    margin-bottom: 2em;
+
+}
+#but{
+    margin-top: 18px;
+}
+.ecrit{
+    color: white;
+}
+.h2{
+    color: white;
+    font-weight: bolder;
+}
+@media (max-width: 575.98px) {
+    .divg{
+        margin-left: 1.5em;
+        width: 25em;
+        padding-right: 15px;
+
+    }
+    
+  }
+  
+  @media (min-width: 576px) {
+    .divg{
+        margin-left: 14em;
+        width: 25em;
+        padding-right: 15px;
+
+    }
+    
+    
+  }
+  
+ 
+/* Ce code appartient a ma deuxième  page*/
+.table{
+    width: 10em;
+    height: 15em;
+    background-color: rgb(252, 250, 143);
+    margin-bottom: 4em;
+}
+.h1l{
+    color: black;
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+    margin-left: 14em;
+    margin-top: 2em;
+}
+.h1ll{
+    color: red;
+    font-family: 'Times New Roman', Times, serif;
+    margin-left: 13em;
+}
+@media (max-width: 575.98px) {
+ .h1l{
+     margin-left: 110px;
+ }
+ .h1ll{
+    margin-left: 90px;
+}
+    
+  }
+  
+  @media (min-width: 576px) {
+    .h1l{
+        margin-left: 4.2em;
+    }
+    .h1ll{
+       margin-left: 3.2em;
+   }
+    
+    
+  }

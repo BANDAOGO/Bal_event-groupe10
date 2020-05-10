@@ -1,0 +1,29 @@
+#div_general_entete_Bfooter{
+    background-color: rgb(68, 63, 63);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin:2px;
+    height: 100px;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+}
+.logoBfooter{
+    height: 80px;
+    width: 140px;
+}
+
+.lien_Bfooter{
+    color:rgb(247, 244, 244);
+    text-decoration: none;
+}
+.copyrightB{
+    text-align: center;
+    background-color: rgb(68, 63, 63);
+    color:rgb(247, 244, 244);
+}
+.blanc{
+    color: white;
+}

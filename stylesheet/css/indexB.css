@@ -1,0 +1,22 @@
+#div_general_AccueilB{
+    display: block;
+    flex-wrap: wrap;
+
+    margin: auto;
+}
+.image_evenementielleB{
+    width: 100%;
+    height: 500px;
+}
+.second_divB{
+    margin-left: 400px;
+}
+.class_promotionB{
+    font-size: 36px;
+}
+.class_agenceB{
+    font-size: 40px;
+}
+.soiree_dinerB{
+    font-size: 40px;
+}

@@ -1,0 +1,47 @@
+#div-general-admin{
+    border-radius: 20px;
+    display: block;
+    flex-wrap: wrap;
+    margin: 150px;
+    background-color: rgb(114, 112, 117);
+    align-items: center;
+}
+.inputadmin{
+    width:500px;
+    height: 50px;
+    border-radius: 8px;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.label-input-admin{
+    height:100px ;
+    margin-left: 150px;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.labeladmin{
+    font-size: 30px;
+    color:white;
+}
+.clas{
+    margin-right: -150px;
+    margin-left: 400px;
+}
+.icons8_admin{
+    height: 50px;
+    background-color: white;
+}
+.alien{
+    color: rgb(28, 28, 128);
+    text-decoration-line: none;
+}
+
+.admine{
+    color:red;
+}
+.labelsubmitadmin{
+    color:black;
+    border-radius: 8px;
+    flex-wrap: wrap;
+}
+

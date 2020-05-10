@@ -1,0 +1,29 @@
+#div_general_entete_B{
+   
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin:2px;
+    height: 60px;
+    align-items: center;
+    margin-bottom: 10px;
+    box-shadow: -1px 2px 5px 1px rgba(0, 0, 0, 0.7);
+   
+}
+.logoB{
+    height: 60px;
+    width: 100px;
+}
+.lien_accueilB {
+    color:black;
+    text-decoration: none;
+}
+.lien_evenementielB{
+    color: black;
+    text-decoration: none;
+}
+.lien_adminB{
+    color:red;
+    text-decoration: none;
+}

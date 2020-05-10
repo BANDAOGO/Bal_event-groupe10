@@ -1,0 +1,11 @@
+.sectionar{
+width: 100%;
+height: auto;
+display: inline-flex;
+}
+.imagegauchear{
+width: 30%;
+}
+.textear{
+width: 70%;
+}
