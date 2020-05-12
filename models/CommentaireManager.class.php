@@ -5,27 +5,31 @@ class CommentaireManager{
     public function __construct($db){
         $this->_db=$db;
     }
+
+    public function afficher($dd="1")
+    {
+      $comment=[];
+      $sql=$this->_db->prepare("SELECT * FROM commentaire WHERE id_commentaire=:dd");
+      $sql->execute(array("dd"=>$dd));
+      $rows=$sql->fetchAll();
+      $sql->closeCursor();
+      print_r($rows);
+      foreach ($rows as $row) {
+ 
+      $comment[]=new Commentaire($row);
+      }
+      return $comment;
+    }
+
     public function enregister(Commentaire $comment){
-        $sql=$this->_db->prepare("INSERT INTO commentaire(id_evenementiel,nom_visiteur,libelle_commentaire) 
-        VALUES(:id_evenementiel, :nom_visiteur, :libelle_commentaire)");
+
+        $sql=$this->_db->prepare("INSERT INTO commentaire(nom_visiteur,libelle_commentaire) 
+        VALUES(:nom_visiteur, :libelle_commentaire)");
         $ql=$sql->execute(array(
-            "id_evenementiel"=>$comment->getid_evenementiel(),
             "nom_visiteur"=>$comment->getnom_visiteur(),
             "libelle_commentaire"=>$comment->getlibelle_commentaire()
         )); 
     }
-    
-    public function afficher(){
-        $comment=[];
-        $sql=$this->_db->query("SELECT * FROM commentaire");
-        $donnee=$sql->fetchAll();
-        $sql->closeCursor();
-        foreach ($donnee as $value){
-          $comment[]= new Commentaire ($value);
-        }
-        return $comment;
-    }
-
 
     public function supprimer($id_commentaire){
         $sql=$this->_db->prepare("DELETE FROM commentaire WHERE id_commentaire=?");
@@ -42,3 +46,4 @@ class CommentaireManager{
 
 }
 ?>
+

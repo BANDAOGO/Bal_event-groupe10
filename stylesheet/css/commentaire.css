@@ -1,9 +1,9 @@
 #contenair{
-    /* display: flex; */
+    display: flex;
     background-color:rgb(243, 228, 91);
     padding-left: 100px;
     padding-right: 100px;
-    align-items: center;
+    /* align-items: center; */
     border-radius: 15px;
 }
 
@@ -29,4 +29,14 @@
     display: flex;
     justify-content: center;
     border-radius: 10px;
+}
+.formulairear{
+     width: 40%;
+     height: auto;
+}
+
+.listcommentairear{
+    margin-left: 50px;
+    width: 60%;
+    height: auto;
 }

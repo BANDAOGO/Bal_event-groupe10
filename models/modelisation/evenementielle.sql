@@ -9,8 +9,7 @@ drop table if exists compte;
 /*==============================================================*/
 create table Commentaire
 (
-   id_commentaire       int(11) ,
-   id_evenementiel      int not null AUTO_INCREMENT,
+   id_commentaire       int not null AUTO_INCREMENT,
    nom_visiteur         varchar(254),
    libelle_commentaire  varchar(254),
    primary key (id_commentaire)
@@ -43,5 +42,3 @@ create table compte
    primary key (mot_de_passe)
 );
 
-alter table Commentaire add constraint FK_Association_1 foreign key (id_evenementiel)
-      references Evenements (id_evenementiel) on delete restrict on update restrict;

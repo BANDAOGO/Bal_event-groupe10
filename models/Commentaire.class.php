@@ -1,17 +1,12 @@
 <?php 
 class Commentaire{
     private $id_commentaire;
-    private $id_evenementiel;
     private $nom_visiteur;
     private $libelle_commentaire;
 
 
     public function getid_commentaire(){
         return $this->id_commentaire;
-    }
-
-    public function getid_evenementiel(){
-        return $this->id_evenementiel;
     }
 
     public function getnom_visiteur(){
@@ -24,10 +19,6 @@ class Commentaire{
 
     public function setid_commentaire($id_commentaire){
         $this->id_commentaire=$id_commentaire;
-    }
-
-    public function setid_evenementiel($id_evenementiel){
-        $this->id_evenementiel=$id_evenementiel;
     }
 
     public function setgetnom_visiteur($getnom_visiteur){
